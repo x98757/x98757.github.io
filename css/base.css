@@ -1,0 +1,57 @@
+/* 消除标签默认属性 */
+body,
+div,
+span,
+p,
+a,
+input,
+img,
+i,
+del,
+ins,
+ul,
+li,
+strong,
+em,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  border: none;
+  outline: none;
+}
+img {
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+/* 清除浮动的影响 */
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+/* 兼容低级浏览器 */
+.clearfix {
+  *zoom: 1;
+}
