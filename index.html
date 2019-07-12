@@ -8,43 +8,68 @@
     <title>我的主页</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
+
     <style>
- 
+        .x {
+            background-color: #ff0;
+        }
 
         .s {
-            background-color: skyblue;
+            background-color: #f00;
         }
-        
-        font{
-            width: 200px;
-            font-size: 30px;
+
+        .d {
+            background-color: #f0f;
+        }
+
+        .e {
+            background-color: #00ff00;
+        }
+
+        .list {
+            font-family: "楷体";
+            width: 1440px;
+            height: 1000px;
+            margin: 0 auto;
             text-align: center;
         }
+
+        .list>h1 {
+            color: skyblue;
+            font-size: 50px;
+        }
     </style>
+
+
 
 </head>
 
 <body>
     <div id="dowebok">
-        <div class="section">第一屏</div>
-        <div class="section">
-            <div class="slide s">
-                <div class="x">
-                    <p>你好</p>
-                </div>
+        <div class="section x">
+            <div class="list">
+                <h1>你好</h1>
             </div>
-            <div class="slide s"></div>
-            <div class="slide s"></div>
-            <div class="slide s"></div>
         </div>
-        <div class="section">第三屏</div>
-        <div class="section">第四屏</div>
+        <div class="section s">
+            <div class="list">
+            </div>
+        </div>
+        <div class="section d">
+            <div class="list">
+            </div>
+        </div>
+        <div class="section e">
+            <div class="list">
+            </div>
+        </div>
     </div>
 
 
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/index.js"></script>
+
 
 
 
